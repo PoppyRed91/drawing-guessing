@@ -1,0 +1,46 @@
+.title {
+    font-size: 4rem;
+}
+
+.button {
+    font-size: 2rem;
+    border-radius: 20px;
+}
+
+.instructions {
+    font-size: 2rem;
+}
+
+.animal-element {
+    font-size: 2rem;
+}
+
+.canvas {
+    border: 2px solid black;
+}
+
+.counter {
+    border: 2px solid black;
+    font-size: 2rem;
+}
+
+.input-el {
+
+}
+
+.user-input-el {
+
+
+}
+
+.correct-el {
+
+}
+
+.incorrect-el {
+
+}
+
+.incorrect-quote {
+    
+}
