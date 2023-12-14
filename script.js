@@ -1,5 +1,11 @@
 "use strict"
 
+//importing loader
+
+import './loading.js';
+import { HideLoader, ShowLoader } from './loading.js';
+
+
 // function for main menu
 
 let startEl = document.createElement("div")
@@ -59,6 +65,7 @@ function giveInstructions() {
     instructionsEl.appendChild(continueGameButton);
     continueGameButton.classList.add("button")
     continueGameButton.addEventListener("click", function () {
+        ShowLoader()
         fetchRandomAnimal()
         continueGameButton.disabled = true;
         instructionsEl.style.display = "none";
@@ -96,6 +103,7 @@ assignmentEl.classList.add("assignment-wrapper");
 document.body.appendChild(assignmentEl);
 
 function showAnimal() {
+    HideLoader();
     animalEl = document.createElement("p");
     animalEl.innerText = randomAnimal.animal;
     correctAnimal = randomAnimal.animal;
