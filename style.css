@@ -202,9 +202,10 @@
 
 .loader {
     margin: 15% 25%;
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation fadeOut ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+
 }
  
 @keyframes fadeInAnimation {
@@ -215,3 +216,8 @@
         opacity: 1;
      }
 }
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;} 
+ } 
